@@ -1,0 +1,117 @@
+/* bloglist.css */
+.blog-list-container {
+    margin: 20px;
+  }
+  
+  .blog-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .blog-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .blog-item .thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .blog-item .thumbnail h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  .blog-item .thumbnail p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .blog-item .thumbnail .date {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .blog-item .content {
+    display: none;
+    padding-top: 10px;
+  }
+  
+  .blog-item .content.active {
+    display: block;
+  }
+  
+  .blog-item .content h4 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+  
+  .blog-item .content p {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .blog-item .content img {
+    width: 60%; /* Adjust the width as per your preference */
+    max-width: 300px; /* Max width to avoid oversized images */
+    margin-top: 10px;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .blog-item button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .blog-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .blog-item {
+      padding: 10px;
+    }
+  
+    .blog-item .thumbnail h3 {
+      font-size: 1.3rem;
+    }
+  
+    .blog-item .thumbnail p,
+    .blog-item .thumbnail .date {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .blog-item .thumbnail h3 {
+      font-size: 1.1rem;
+    }
+  
+    .blog-item .thumbnail p,
+    .blog-item .thumbnail .date {
+      font-size: 0.8rem;
+    }
+  
+    .blog-item button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
+  
